@@ -7,32 +7,30 @@ What is the largest prime factor of the number 600851475143 ?
 =end
 
 number = 600851475143
-factors = []
+largest_prime_factor = 0
 i = 2
 (number / 2).times do
   if number % i == 0
-    factors << i
-  end
-  if i > 2
-    i += 2
-  else
-    i += 1
-  end
-end
-
-index = factors.length - 1
-factors.length.times do
-  if factor != 2
-    i = 2
-    (factor / 2).times do
-      if factors[index] % i == 0
-        factors.del(factors[index])
-        break
+    # check whether number/i is prime
+    i2 = 2
+    prime = true
+    big_number = number / i
+    # if number/i is prime, largest_prime_number = it
+    (big_number - 2).times do
+      if big_number % i2 == 0
+        prime = false
+      else
+        i2 += 1
       end
-      i += 1
-      index -= 1
+      break if prime == false
+    end
+    if prime == true
+      largest_prime_factor = number/i
     end
   end
+  break if largest_prime_factor > 0
+  i += 1
 end
 
-p factors.max
+p largest_prime_factor # => 6857
+
