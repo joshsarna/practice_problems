@@ -13,4 +13,4 @@ sum = 0
   i += 1
 end
 
-p sum
+p sum  # => 233168
