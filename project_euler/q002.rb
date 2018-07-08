@@ -8,18 +8,41 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 =end
 
-fibonacci = [1]
-sum = 0
-value = 1
-while value < 4000000
-  fibonacci << value
-  value = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2]
+# fibonacci = [1]
+# sum = 0
+# value = 1
+# while value < 4000000
+#   fibonacci << value
+#   value = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2]
+# end
+
+# fibonacci.each do |element|
+#   if element % 2 == 0
+#     sum += element
+#   end
+# end
+
+# p fibonacci
+# p sum  # => 4613732
+
+# Using recursion
+
+@fibonacci = [1,2]
+def recursive_fib(number) # number should always be two
+  if @fibonacci.last > 4000000
+    @fibonacci.delete(@fibonacci.last)
+    return @fibonacci
+  else
+    @fibonacci << (@fibonacci[number - 2] || 1) + (@fibonacci[number - 1]|| 1)
+    return recursive_fib(number + 1)
+  end
 end
 
-fibonacci.each do |element|
+sum = 0
+recursive_fib(2).each do |element|
   if element % 2 == 0
     sum += element
   end
 end
 
-p sum
+p sum  # => 4613732
