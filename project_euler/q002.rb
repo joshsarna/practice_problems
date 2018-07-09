@@ -28,18 +28,22 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 # Using recursion
 
 @fibonacci = [1,2]
-def recursive_fib(number) # number should always be two
-  if @fibonacci.last > 4000000
+def recursive_fib(number, ceiling) # number should always be two
+  if @fibonacci.last > ceiling
     @fibonacci.delete(@fibonacci.last)
     return @fibonacci
   else
     @fibonacci << (@fibonacci[number - 2] || 1) + (@fibonacci[number - 1]|| 1)
-    return recursive_fib(number + 1)
+    return recursive_fib(number + 1, ceiling)
   end
 end
 
+def fib_caller(ceiling)
+  recursive_fib(2,ceiling)
+end
+
 sum = 0
-recursive_fib(2).each do |element|
+fib_caller(4000000).each do |element|
   if element % 2 == 0
     sum += element
   end
