@@ -96,7 +96,7 @@ row = 0
     routes[route_number + 1][:last_index] = first_accessible_item + 3
     route_number += 2
   end
-  # remaining_rows -= 1
+  # remaining_rows -= 1  # for use in problem 67
 end
 
 # p routes
