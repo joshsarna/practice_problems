@@ -20,6 +20,34 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 # all unit fractions are either terminating or recurring decimals; none are irrational
 
 # make a method for calculating recurring cycle length
+def rec_cycle_length(n)
+  decimals = []
+  remainder = 1
+  remainders = []
+  continue = true
+  while continue do
+    remainders << remainder
+    remainder = (remainder * 10 % n)
+    if remainders.include? remainder
+      continue = false
+    end
+  end
+  remainders.length - remainders.find_index(remainder)
+end
 
+# termindating decimals are treated as having a recurring cycle of (0); this does not affect the answer to this question
 
 # loop through 1 - 1000 to find longest recurring cycle
+i = 2
+max_length = 0
+i_with_max = 1
+998.times do
+  if rec_cycle_length(i) > max_length
+    max_length = rec_cycle_length(i)
+    i_with_max = i
+  end
+  i += 1
+end
+
+p i_with_max  # => 983
+p max_length  # => 982
