@@ -24,7 +24,7 @@ p is_prime?(12)   #=> false
 // p is_prime?(11)   #=> true
 // p is_prime?(12)   #=> false
 
-function is_prime(n) {
+function isPrime(n) {
   if (n === 2) {
     return true;
   }
@@ -33,10 +33,10 @@ function is_prime(n) {
       return false;
     }
   }
-  return true;
+  return true
 }
 
-console.log(is_prime(2))
-console.log(is_prime(10))
-console.log(is_prime(11))
-console.log(is_prime(12))
+console.log(isPrime(2))
+console.log(isPrime(10))
+console.log(isPrime(11))
+console.log(isPrime(12))
