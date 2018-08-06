@@ -52,10 +52,10 @@ def number_of_primes(a,b)
     continue = creates_prime?(a,b,n)
     n += 1
   end
-  n
+  new_n
 end
 
-# p number_of_primes(1,41)
+# p number_of_primes(-79,1601)
 
 a = -999
 b = -1000
@@ -63,8 +63,9 @@ largest_number = 0
 a_of_largest = -1000
 b_of_largest = -1001
 
-1998.times do
-  2000.times do
+1999.times do
+  b = -1000
+  2001.times do
     if number_of_primes(a,b) > largest_number
       largest_number = number_of_primes(a,b)
       a_of_largest = a
@@ -75,4 +76,5 @@ b_of_largest = -1001
   a += 1
 end
 
-p a_of_largest * b_of_largest
+p largest_number  # => 71
+p a_of_largest * b_of_largest  # => -59231
