@@ -1,4 +1,5 @@
 /*
+
 Start with the array:
 
 var array = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]];
@@ -8,6 +9,7 @@ Use a JavaScript loop within a loop to take each of those letters and put them i
 ["a", "b", "z", "c", "d", "e", "f", "g", "h", "i", "j"]
 
 end
+
 */
 
 var arrays = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]];
