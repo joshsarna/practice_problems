@@ -10,15 +10,32 @@ HINT: Some products can be obtained in more than one way so be sure to only incl
 
 =end
 
-numbers = [1,2,3,4]
-other_numbers = numbers
-other_numbers.delete(1)
+a = 1
+products = []
+99999.times do
+  b = 1
+  (99999 / a).times do
+    digits = []
+    c = a * b
+    a_s = a.to_s
+    b_s = b.to_s
+    c_s = c.to_s
+    a_s.split('').each do |letter|
+      digits << letter
+    end
+    b_s.split('').each do |letter|
+      digits << letter
+    end
+    c_s.split('').each do |letter|
+      digits << letter
+    end
+    if digits.sort == ["1","2","3","4","5","6","7","8","9"]
+      products << c
+    end
+    b += 1
+  end
+  a += 1
+end
 
-p other_numbers
-p numbers
-
-more_numbers = Marshal.load(Marshal.dump(numbers))
-more_numbers.delete(2)
-
-p more_numbers
-p numbers
+sum_of_unique_products = products.uniq.sum
+p sum_of_unique_products  # => 45228
