@@ -65,17 +65,32 @@
 #   return false
 # end
 
-def duplicates?(array)
-  reference_values = {}
-  array.each do |element|
-    if reference_values[element]
-      return true
-    else
-      reference_values[element] = true
+# def duplicates?(array)
+#   reference_values = {}
+#   array.each do |element|
+#     if reference_values[element]
+#       return true
+#     else
+#       reference_values[element] = true
+#     end
+#   end
+#   return false
+# end
+
+# p duplicates?([9, 7, 8, 3, 3, 1, 2, 4])  # => true
+# p duplicates?([9, 7, 8, 3, 1, 2, 4])  # => false
+
+def find_longest_word(input_string)
+  arr_input = input_string.split
+  p arr_input
+  longest_word = ""
+   # I do not know how to filter out the question mark from 'phrase?' so I reviewed the master solutions. I'll keep the `gsub` method in mind for next time.
+  arr_input.each do |word|
+    if longest_word.length < word.length
+      longest_word = word
     end
   end
-  return false
+   return longest_word
 end
-
-p duplicates?([9, 7, 8, 3, 3, 1, 2, 4])  # => true
-p duplicates?([9, 7, 8, 3, 1, 2, 4])  # => false
+ # 5 
+p find_longest_word("What is the longest word in this phrase?")

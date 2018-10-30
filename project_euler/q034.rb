@@ -41,7 +41,6 @@ def sum_of_factorials?(number)
 end
 
 # finally, we'll loop through all numbers under our ceiling and above two
-
 sum = 0
 [*(3..2540160)].each do |number|
   if sum_of_factorials?(number)
