@@ -80,17 +80,54 @@
 # p duplicates?([9, 7, 8, 3, 3, 1, 2, 4])  # => true
 # p duplicates?([9, 7, 8, 3, 1, 2, 4])  # => false
 
-def find_longest_word(input_string)
-  arr_input = input_string.split
-  p arr_input
-  longest_word = ""
-   # I do not know how to filter out the question mark from 'phrase?' so I reviewed the master solutions. I'll keep the `gsub` method in mind for next time.
-  arr_input.each do |word|
-    if longest_word.length < word.length
-      longest_word = word
-    end
+# def find_longest_word(input_string)
+#   arr_input = input_string.split
+#   p arr_input
+#   longest_word = ""
+#    # I do not know how to filter out the question mark from 'phrase?' so I reviewed the master solutions. I'll keep the `gsub` method in mind for next time.
+#   arr_input.each do |word|
+#     if longest_word.length < word.length
+#       longest_word = word
+#     end
+#   end
+#    return longest_word
+# end
+#  # 5 
+# p find_longest_word("What is the longest word in this phrase?")
+
+def recursive_fib(n)
+  if n < 2
+    return n
+  else
+    recursive_fib(n - 1) + recursive_fib(n - 2)
   end
-   return longest_word
 end
- # 5 
-p find_longest_word("What is the longest word in this phrase?")
+
+p recursive_fib(10)  # => 55
+# start = Time.now
+# p "#{(Time.now - start)} seconds"
+
+# def fibonacci(n)
+#   fib_sequence = [0,1]
+#   i = 2
+#   while i <= n
+#     fib_sequence[i] = fib_sequence[-1] + fib_sequence[-2]
+#     i += 1
+#   end
+#   return fib_sequence[-1]
+# end
+
+# start = Time.now
+# p fibonacci(10)
+# p "#{(Time.now - start)} seconds"
+
+# def recursive_counter(n, end_point)
+#   p n
+#   if n == end_point
+#     return "complete"
+#   else
+#     return recursive_counter(n + 1, end_point)
+#   end
+# end
+
+# p recursive_counter(5, 12)
