@@ -39,7 +39,7 @@ def conc_pan(number)
   end
 end
 
-# 100000 / 2 = 50000 is the largest number we could use, since "33333" + "66666" = "50000100000", which has too high a length
+# 100000 / 2 = 50000 is the largest number we could use, since "50000" + "100000" = "50000100000", which has too high a length
 
 index = 1
 largest_conc = 0
