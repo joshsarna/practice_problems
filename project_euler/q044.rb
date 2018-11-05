@@ -17,9 +17,9 @@ def find_d
     s = @pentagonals[-1]
     @pentagonals.each do |p1|
       if !(p1 == s)
-        @p2 = s - p1
-        d = (@p2 - p1).abs
-        if @pentagonals.include?(@p2) && @pentagonals.include?(d)
+        p2 = s - p1
+        d = (p2 - p1).abs
+        if @pentagonals.include?(p2) && @pentagonals.include?(d)
           return d
         end
       end
