@@ -15,8 +15,6 @@ Find the first four consecutive integers to have four distinct prime factors eac
 
 =end
 
-require 'set'
-
 def prime?(number)
   i = 2
   if number == 2
@@ -41,14 +39,14 @@ def prime_factors(number)
   if prime?(number)
     return [number]
   else
-    new_prime = @primes[-1] + 1
+    new_prime = @primes[-1] + 2
     while @primes[-1] * 2 <= number
       if prime?(new_prime)
         @primes << new_prime
       end
-      new_prime += 1
+      new_prime += 2
     end
-    while @primes[i] * 2 <= number
+    while @primes[i] <= Math.sqrt(number)
       if number % @primes[i] == 0
         factors << @primes[i]
         number /= @primes[i]
@@ -65,18 +63,24 @@ end
 i = 2
 continue = true
 while continue
+  step = 1
   factors1 = prime_factors(i)
   factors2 = prime_factors(i + 1)
   factors3 = prime_factors(i + 2)
   factors4 = prime_factors(i + 3)
-  if factors1.to_set.length >= 4 &&
-    factors2.to_set.length >= 4 &&
-    factors3.to_set.length >= 4 && 
-    factors4.to_set.length >= 4
-    continue = false
-  else
-    i += 1
+  if factors1.uniq.length >= 4
+    step += 1
+    if factors2.uniq.length >= 4
+      step += 1
+      if factors3.uniq.length >= 4
+        step += 1
+        if factors4.uniq.length >= 4
+          continue = false
+        end
+      end
+    end
   end
+  i += step if continue == true
 end
 
 p i  # => 134043
