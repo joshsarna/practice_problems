@@ -21,5 +21,5 @@ while primes.length < 10001
   i += 1
 end
 
-p primes[1000]  # => 7927
+p primes[10000]  # => 104743
 # took about 45 seconds
