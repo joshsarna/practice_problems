@@ -54,7 +54,7 @@ array.length.times do
     name_sum += alphabetical_value[array[name_i][letter_i].downcase]
     letter_i += 1
   end
-  total_sum += name_sum * name_i
+  total_sum += name_sum * (name_i + 1)
   name_i += 1
 end
 
