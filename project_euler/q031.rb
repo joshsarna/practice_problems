@@ -20,8 +20,8 @@ def deep_copy(o)
 end
 
 coin_values.each do |coin_value|
+  @new_lightweights = deep_copy(lightweights)
   lightweights.each do |coin_combo|
-    @new_lightweights = deep_copy(lightweights)
     (200/coin_value).times do
       coin_combo << coin_value
       if coin_combo.sum == 200
@@ -37,4 +37,4 @@ coin_values.each do |coin_value|
   end
 end
 
-p double_pounders.length  # => 43
+p double_pounders.length  # => 73682
