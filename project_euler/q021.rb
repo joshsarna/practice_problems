@@ -24,10 +24,11 @@ end
 sum = 0
 number = 1
 9999.times do
-  if d(d(number).sum).sum == number
+  d_number_sum = d(number).sum
+  if d_number_sum != number && d(d_number_sum).sum == number
     sum += number
   end
   number += 1
 end
 
-p sum  # => 40284
+p sum  # => 31626
