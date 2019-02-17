@@ -303,4 +303,4 @@ hands.each do |game|
   game_outcomes[who_wins(player1, player2)] += 1
 end
 
-p game_outcomes[1] # => 376
+  p game_outcomes[1] # => 376
