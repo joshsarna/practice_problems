@@ -8,7 +8,7 @@ Find the smallest prime which, by replacing part of the number (not necessarily 
 
 =end
 
-def prime?(number)
+  def prime?(number)
   i = 2
   if number == 2
     return true
@@ -74,12 +74,15 @@ def check_for8_in(x)
         i_trial += 1
       end
 
-      # count primes
-      prime_count = 0
-      (0..9).each do |sub|
-        prime_trial = trial.gsub('*', sub.to_s)
-        if prime?(prime_trial.to_i)
-          prime_count += 1
+      # this if statement is redundant because of the check for primeness, but it can save us some time by eliminating some bases off the bat
+      if trial[-1] == "*" || trial[-1].to_i % 2 != 0
+        # count primes
+        prime_count = 0
+        (0..9).each do |sub|
+          prime_trial = trial.gsub('*', sub.to_s)
+          if prime?(prime_trial.to_i)
+            prime_count += 1
+          end
         end
       end
 
@@ -140,17 +143,18 @@ def search_for8 # calls check_for8_in() as many times as is necessary
   check_method_return
 end
 
-def first_of8(search_method_return) # processes info from search_for8
+def first_of8 # processes info from search_for8
+  search_method_return = search_for8
   mutatable_base = search_method_return[0]
   search_method_return[1].each do |index_to_replace|
     mutatable_base[index_to_replace] = 'x'
   end
 
   i = 0
-  while !prime?(mutatable_base.gsub('x', i.to_s))
+  while !prime?(mutatable_base.gsub('x', i.to_s).to_i)
     i += 1
   end
   mutatable_base.gsub('x', i.to_s).to_i
 end
 
-p first_of8(search_for8)
+p first_of8
