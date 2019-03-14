@@ -292,7 +292,7 @@ def who_wins(player1, player2)
 end
 
 
-input = File.open('./../resources/p054_poker.txt', File::RDONLY){|f| f.read }
+input = File.open('./resources/p054_poker.txt', File::RDONLY){|f| f.read }
 hands = input.split("\n").map{ | hand | hand.split(' ') }
 
 game_outcomes = {1 => 0, 2 => 0, 0 => 0}

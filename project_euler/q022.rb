@@ -8,7 +8,7 @@ What is the total of all the name scores in the file?
 
 =end
 
-input = File.open('./../resources/p022_names.txt', File::RDONLY){|f| f.read }
+input = File.open('./resources/p022_names.txt', File::RDONLY){|f| f.read }
 # array = input.lines.map{|l| l.split.map(&:to_f) }
 array = input.split('","')
 array.first[0] = ''
