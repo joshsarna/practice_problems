@@ -23,10 +23,13 @@ These are problems I completed in a plain text file for practice and have added 
 ### HackerRank
 
 * Ruby: Gold Level (5 stars)
+  * Rank: 1
 
 * Problem Solving: Silver Level (3 stars)
+  * Rank: 337307
 
 * SQL: Bronze Level (1 star)
+  * Rank: 210204
 
 [Visit my Profile](https://www.hackerrank.com/joshsarna)
 
