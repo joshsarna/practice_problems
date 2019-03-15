@@ -22,9 +22,9 @@ These are problems I completed in a plain text file for practice and have added 
 
 ### HackerRank
 
-* Problem Solving: Silver Level (3 stars)
+* Ruby: Gold Level (5 stars)
 
-* Ruby: Silver Level (3 stars)
+* Problem Solving: Silver Level (3 stars)
 
 * SQL: Bronze Level (1 star)
 
