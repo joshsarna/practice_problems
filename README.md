@@ -2,40 +2,40 @@
 
 ## Collected Here
 
-#### [Project Euler](https://github.com/joshsarna/practice_problems/tree/master/project_euler)
+### [Project Euler](https://github.com/joshsarna/practice_problems/tree/master/project_euler)
 
 ![Project Euler Badge](https://projecteuler.net/profile/joshsarna.png "")
 
-#### Cracking the Coding Interview
+### Cracking the Coding Interview
 
 Coming Soon
 
-#### [Actualize Practice Problems](https://github.com/joshsarna/practice_problems/tree/master/actualize_practice_problems)
+### [Actualize Practice Problems](https://github.com/joshsarna/practice_problems/tree/master/actualize_practice_problems)
 
 These are problems from Actualize Coding Bootcamp
 
-#### [Whiteboarding](https://github.com/joshsarna/practice_problems/tree/master/white_boarding_questions)
+### [Whiteboarding](https://github.com/joshsarna/practice_problems/tree/master/white_boarding_questions)
 
 These are problems I completed in a plain text file for practice and have added to ruby files for kicks.
 
 ## Elsewhere
 
-#### HackerRank
+### HackerRank
 
 * Ruby: Gold Level (5 stars)
   * Rank: 1
 
 * Problem Solving: Silver Level (3 stars)
-  * Rank: 292565
+  * Rank: 249400
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
 
 [Visit my Profile](https://www.hackerrank.com/joshsarna)
 
-#### Exercism
+### Exercism
 
-* Ruby: 29/92 exercises
+* Ruby: 31/92 exercises
 
 * R: 4/34 exercises
 
