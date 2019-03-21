@@ -26,7 +26,7 @@ These are problems I completed in a plain text file for practice and have added 
   * Rank: 1
 
 * Problem Solving: Silver Level (3 stars)
-  * Rank: 249400
+  * Rank: 218916
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
@@ -35,7 +35,7 @@ These are problems I completed in a plain text file for practice and have added 
 
 ### Exercism
 
-* Ruby: 31/92 exercises
+* Ruby: 36/92 exercises
 
 * R: 4/34 exercises
 
