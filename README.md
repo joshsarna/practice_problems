@@ -25,8 +25,8 @@ These are problems I completed in a plain text file for practice and have added 
 * Ruby: Gold Level (5 stars)
   * Rank: 1
 
-* Problem Solving: Silver Level (4 stars)
-  * Rank: 98398
+* Problem Solving: Gold Level (5 stars)
+  * Rank: 83021
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
