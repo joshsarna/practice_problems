@@ -44,3 +44,9 @@ These are problems I completed in a plain text file for practice and have added 
 [GitHub Repo](https://github.com/joshsarna/Exercism)
 
 [Exercism Profile](https://exercism.io/profiles/joshsarna)
+
+### Interview Cake
+
+* Ruby: 3 exercises
+
+[GitHub Repo](https://github.com/joshsarna/interview_cake)
