@@ -26,7 +26,7 @@ These are problems I completed in a plain text file for practice and have added 
   * Rank: 1
 
 * Problem Solving: Gold Level (5 stars)
-  * Rank: 83021
+  * Rank: 69711
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
@@ -47,6 +47,8 @@ These are problems I completed in a plain text file for practice and have added 
 
 ### Interview Cake
 
-* Ruby: 3 exercises
+* Ruby: 4 exercises
+
+* JavaScript: 1 exercise
 
 [GitHub Repo](https://github.com/joshsarna/interview_cake)
