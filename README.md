@@ -6,9 +6,9 @@
 
 ![Project Euler Badge](https://projecteuler.net/profile/joshsarna.png "")
 
-### Cracking the Coding Interview
+### [Cracking the Coding Interview](https://github.com/joshsarna/practice_problems/tree/master/cracking_the_coding_interview)
 
-Coming Soon
+I've found that Java's pretty readable if you know JavaScript.
 
 ### [Actualize Practice Problems](https://github.com/joshsarna/practice_problems/tree/master/actualize_practice_problems)
 
