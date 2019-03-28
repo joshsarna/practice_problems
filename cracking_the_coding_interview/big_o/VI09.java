@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class VI9 {
+public class VI09 {
   public static int[] copyArray(int[] array) {
     int[] copy = new int[0];
     for (int value : array) {

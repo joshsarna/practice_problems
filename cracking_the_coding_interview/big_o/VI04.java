@@ -1,4 +1,4 @@
-public class VI4 {
+public class VI04 {
   public static int div(int a, int b) {
     int count = 0;
     int sum = b;

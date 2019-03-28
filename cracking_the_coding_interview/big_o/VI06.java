@@ -1,4 +1,4 @@
-public class VI6 {
+public class VI06 {
   public static int sqrt(int n) {
     for (int guess = 1; guess * guess <= n; guess++) {
       if (guess * guess == n) {

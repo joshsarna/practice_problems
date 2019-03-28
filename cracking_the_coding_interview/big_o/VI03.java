@@ -1,4 +1,4 @@
-public class VI3 {
+public class VI03 {
   public static int mod(int a, int b) {
     if (b <= 0) {
       return -1;

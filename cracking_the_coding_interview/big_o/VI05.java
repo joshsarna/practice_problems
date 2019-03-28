@@ -1,4 +1,4 @@
-public class VI5 {
+public class VI05 {
   public static int sqrt(int n) {
     return sqrt_helper(n, 1, n);
   }

@@ -1,4 +1,4 @@
-public class VI2 {
+public class VI02 {
   public static int power(int a, int b) {
     if (b < 0) {
       return 0; // error

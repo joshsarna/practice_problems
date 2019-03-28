@@ -1,4 +1,4 @@
-public class VI1 {
+public class VI01 {
   public static int product(int a, int b) {
     int sum = 0;
     for (int i = 0; i < b; i++) {
