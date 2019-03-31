@@ -1,7 +1,14 @@
 def rotate_matrix(matrix)
   n = matrix.length
   m = matrix[0].length
-  new_matrix = Array.new(m, Array.new(n))
+  new_matrix = []
+  m.times do
+    add_array = []
+    n.times do
+      add_array << []
+    end
+    new_matrix << add_array
+  end
   matrix.each_with_index do |row, row_i|
     row.each_with_index do |col, col_i|
       new_matrix[col_i][-row_i - 1] = col
@@ -14,7 +21,7 @@ def word_search(input_matrix, search_term, recursion_counter = 0, count = 0)
   # if recursion_counter == 4
   return count if recursion_counter == 4
   # end
-  matrix = input_matrix
+  matrix = Marshal.load(Marshal.dump(input_matrix))
   # 4.times do
   matrix.each_with_index do |row, row_i|
     row.each.with_index do |col, col_i|

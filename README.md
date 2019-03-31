@@ -26,7 +26,7 @@ These are problems I completed in a plain text file for practice and have added 
   * Rank: 1
 
 * Problem Solving: Gold Level (5 stars)
-  * Rank: 69711
+  * Rank: 54468
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204

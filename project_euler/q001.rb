@@ -14,3 +14,6 @@ sum = 0
 end
 
 p sum  # => 233168
+
+sum++
+p sum
