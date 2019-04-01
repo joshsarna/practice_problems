@@ -31,6 +31,9 @@ These are problems I completed in a plain text file for practice and have added 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
 
+* 10 Days of JavaScript: Silver Level (3 stars)
+  * Day: 5
+
 [Visit my Profile](https://www.hackerrank.com/joshsarna)
 
 ### Exercism
