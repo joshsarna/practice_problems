@@ -26,12 +26,12 @@ These are problems I completed in a plain text file for practice and have added 
   * Rank: 1
 
 * Problem Solving: Gold Level (5 stars)
-  * Rank: 54468
+  * Rank: 52495
 
 * SQL: Bronze Level (1 star)
   * Rank: 210204
 
-* 10 Days of JavaScript: Silver Level (3 stars)
+* 10 Days of JavaScript: Silver Level (4 stars)
   * Day: 5
 
 [Visit my Profile](https://www.hackerrank.com/joshsarna)
