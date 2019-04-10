@@ -10,6 +10,7 @@ Saving February alone,
 Which has twenty-eight, rain or shine.
 And on leap years, twenty-nine.
 A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
+
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 
 =end
@@ -18,7 +19,7 @@ sunday_count = 0
 month = 1
 year = 1901
 
-day = 367
+day = 366 # one non-leap year after 1/1/1900
 
 100.times do
   12.times do
@@ -36,7 +37,11 @@ day = 367
     else
       day += 30
     end
-    month += 1
+    if month < 12
+      month += 1
+    else
+      month = 1
+    end
   end
   year += 1
 end

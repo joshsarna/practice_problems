@@ -8,7 +8,7 @@ What is the total of all the name scores in the file?
 
 =end
 
-input = File.open('./../resources/p022_names.txt', File::RDONLY){|f| f.read }
+input = File.open('./resources/p022_names.txt', File::RDONLY){|f| f.read }
 # array = input.lines.map{|l| l.split.map(&:to_f) }
 array = input.split('","')
 array.first[0] = ''
@@ -54,7 +54,7 @@ array.length.times do
     name_sum += alphabetical_value[array[name_i][letter_i].downcase]
     letter_i += 1
   end
-  total_sum += name_sum * name_i
+  total_sum += name_sum * (name_i + 1)
   name_i += 1
 end
 

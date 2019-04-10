@@ -1,0 +1,3 @@
+Q: If a binary search tree is not balanced, how long migth it take (worst case) to find an element in it?
+
+A: The big O of searching a BST is O (height); for a balanced tree, this is log n, where n is the number of nodes, but an unbalanced tree could have a heigth of n (if, say, the root node has the largest value, its child node has the second highest value, etc., forming what is essentially a linked list). So, worst case: O (n)

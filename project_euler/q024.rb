@@ -39,13 +39,17 @@ end
 usable_digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 millionth_perm = []
 i = 9
-remainder = 1000000
+remainder = 999999
 10.times do
-digit = remainder / factorial(i)
-remainder %= factorial(i)
-millionth_perm << usable_digits[digit]
-usable_digits.delete(usable_digits[digit])
-i -= 1
+  digit = remainder / factorial(i)
+  remainder %= factorial(i)
+  millionth_perm << usable_digits[digit]
+  usable_digits.delete(usable_digits[digit])
+  i -= 1
 end
 
-p   # => [2, 7, 8, 3, 9, 1, 5, 6, 0, 4]
+perm_as_integer = 0
+millionth_perm.reverse.each_with_index do |digit, index|
+  perm_as_integer += digit * (10 ** index)
+end
+p perm_as_integer  # => 2783915460

@@ -58,12 +58,16 @@ number_of_letters = 0
     hundreds = i.to_s[0].to_i
     number_of_letters += numbers_to_words[hundreds].length + numbers_to_words[100].length
     tens = i.to_s[1].to_i * 10
-    unless tens == 0
-      number_of_letters += numbers_to_words[tens].length
-    end
     ones = i.to_s[2].to_i
-    unless ones == 0
-      number_of_letters += numbers_to_words[ones].length
+    if tens == 10
+      number_of_letters += numbers_to_words[tens + ones].length
+    else
+      unless tens == 0
+        number_of_letters += numbers_to_words[tens].length
+      end
+      unless ones == 0
+        number_of_letters += numbers_to_words[ones].length
+      end
     end
     unless ones == 0 && tens == 0
       number_of_letters += "and".length
