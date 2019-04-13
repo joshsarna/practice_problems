@@ -1,0 +1,26 @@
+    
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <div v-for="number in numbers">
+    <p v-if="number % 3 === 0 && number % 5 === 0">fizzbuzz</p>
+    <p v-else-if="number % 3 === 0">fizz</p>
+    <p v-else-if="number % 5 === 0">buzz</p>
+    <p v-else>{{ number }}</p>
+  </div>
+</div>
+
+<script>
+/* global Vue */
+new Vue({
+  el: '#app',
+  data: {
+    numbers: []
+  },
+  created: function() {
+    for (let i = 1; i <= 20; i++) {
+      this.numbers.push(i);
+    }
+  }
+});
+</script>
