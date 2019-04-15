@@ -1,30 +1,18 @@
 1) For an array with a size of 100 elements:
-  
-  a) reading takes 1 step
-  
-  b) searching takes 100 steps (worst case)
-  
-  c) insertion at the very beginning of the array takes 101 steps
-  
-  d) insertion at the very end of the array takes 1 step
-  
-  e) deletion at the very beginning of the array takes 100 steps
-  
-  f) deletion at the very end of the array takes 1 step
+  * reading takes 1 step
+  * searching takes 100 steps (worst case)
+  * insertion at the very beginning of the array takes 101 steps
+  * insertion at the very end of the array takes 1 step
+  * deletion at the very beginning of the array takes 100 steps
+  * deletion at the very end of the array takes 1 step
 
 2) For an array-based set with a size of 100 elements:
-  
-  a) reading takes 1 step
-  
-  b) searching takes 100 steps (worst case)
-  
-  c) insertion at the very beginning of the array takes 201 steps
-  
-  d) insertion at the very end of the array takes 101 step
-  
-  e) deletion at the very beginning of the array takes 100 steps
-  
-  f) deletion at the very end of the array takes 1 step
+  * reading takes 1 step
+  * searching takes 100 steps (worst case)
+  * insertion at the very beginning of the array takes 201 steps
+  * insertion at the very end of the array takes 101 step
+  * deletion at the very beginning of the array takes 100 steps
+  * deletion at the very end of the array takes 1 step
 
 3) For an array, searching for all instances of an item would take N steps (for a set, the worst case would stay the same, but the best case would be 1 step regardless of size)
 
