@@ -34,6 +34,9 @@ These are problems I completed in a plain text file for practice and have added 
 * 10 Days of JavaScript: Silver Level (4 stars)
   * Day: 5
 
+* Mathematics
+  * Rank: 73287
+
 [Visit my Profile](https://www.hackerrank.com/joshsarna)
 
 ### Exercism
