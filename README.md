@@ -10,6 +10,10 @@
 
 I've found that Java's pretty readable if you know JavaScript.
 
+### [Common Sense Guide to Data Structures and Algorithms](https://github.com/joshsarna/practice_problems/tree/master/commonsense_guide_to_data_strucures_and_algorithms)
+
+Practice Exercises for this book are available online [here](http://commonsensecomputerscience.com/). I'm completing these as I read. 
+
 ### [Actualize Practice Problems](https://github.com/joshsarna/practice_problems/tree/master/actualize_practice_problems)
 
 These are problems from Actualize Coding Bootcamp
@@ -47,13 +51,15 @@ These are problems I completed in a plain text file for practice and have added 
 
 * Python: 1/115 exercises
 
+* JavaScript 1/98 exercises
+
 [GitHub Repo](https://github.com/joshsarna/Exercism)
 
 [Exercism Profile](https://exercism.io/profiles/joshsarna)
 
 ### Interview Cake
 
-* Ruby: 4 exercises
+* Ruby: 5 exercises
 
 * JavaScript: 1 exercise
 
